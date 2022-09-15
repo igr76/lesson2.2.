@@ -28,20 +28,21 @@ public class Puffendui extends Horward{
         }
     }
     private void who(int i,int g) {
-        String name = "";int summ1 = 0;
+        String name = "";
+        int summ1 = 0;
         Puffendui person = puffendui[i];
         name = person.getName();
-        summ1 =  person.getIndustriousness() +
+        summ1 = person.getIndustriousness() +
                 person.getLoyalty() + person.getHonesty();
         Puffendui person = puffendui[g];
-        if (summ1 >  person.getIndustriousness() +
+        if (summ1 > person.getIndustriousness() +
                 person.getLoyalty() + person.getHonesty()) {
             System.out.println(name + "  лучше чем  " + person.getName());
         } else {
-            System.out.println(person.getName() + "  лучше чем  " + name );
-
+            System.out.println(person.getName() + "  лучше чем  " + name);
 
         }
+    }
 
         public int getIndustriousness() {
             return industriousness;

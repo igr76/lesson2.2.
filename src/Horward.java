@@ -33,5 +33,14 @@ public class Horward {
     public int getDistance() {
         return distance;
     }
+
+    @Override
+    public String toString() {
+        return "Horward{" +
+                "name='" + name + '\'' +
+                ", power=" + power +
+                ", distance=" + distance +
+                '}';
+    }
 }
 
