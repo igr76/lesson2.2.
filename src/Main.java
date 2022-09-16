@@ -2,37 +2,32 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Griffindor[] griffindor = {
-                // gariPotter, germionaGreiger, ronUizli;
-                new Griffindor("gariPotter",43, 45, 45, 32, 64),
-                new Griffindor("germionaGreiger",56, 76, 65, 37, 86),
-                new Griffindor("ronUizli",76, 34, 94, 24, 55)
-        };
-        print( griffindor,0);
+        Griffindor griffindor ;
 
-        Slizerin[] slizerin = {
-                new Slizerin("dracoMalfoi",87, 65, 45, 67, 23),
-                new Slizerin("grehemMontegy",23, 76, 76, 23, 57),
-                new Slizerin("gregoryGoil",54, 34, 32, 87, 56),
-        };
+        Griffindor gariPotter =   new Griffindor("gariPotter",43, 45, 45, 32, 64);
+        Griffindor germionaGreiger  = new Griffindor("germionaGreiger",56, 76, 65, 37, 86);
+        Griffindor ronUizli =  new Griffindor("ronUizli",76, 34, 94, 24, 55);
 
-        Puffendui[] puffendui = {
-                new Puffendui("zahariyaSmit",45, 65, 45, 65, 23),
-                new Puffendui("sedrikDiggory",87, 23, 65, 76, 34),
-                new Puffendui("gastinFinch",54, 65, 87, 46, 54),
-        };
 
-        Cogtevran[] cogtevran = {
-                new Cogtevran("chgouChang",87, 34, 98, 23, 75),
-                new Cogtevran("padmaPatil",12, 65, 67, 34, 76),
-                new Cogtevran("MarcusBelby",65, 76, 76, 56, 32),
-        };
+        Slizerin slizerin ;
+        Slizerin dracoMalfoi=  new Slizerin("dracoMalfoi",87, 65, 45, 67, 23);
+        Slizerin grehemMontegy = new Slizerin("grehemMontegy",23, 76, 76, 23, 57);
+        Slizerin gregoryGoil =  new Slizerin("gregoryGoil",54, 34, 32, 87, 56);
+
+
+        Puffendui puffendui ;
+        Puffendui zahariyaSmit =  new Puffendui("zahariyaSmit",45, 65, 45, 65, 23);
+        Puffendui sedrikDiggory = new Puffendui("sedrikDiggory",87, 23, 65, 76, 34);
+        Puffendui gastinFinch =  new Puffendui("gastinFinch",54, 65, 87, 46, 54);
+
+        Cogtevran cogtevran ;
+         Cogtevran chgouChang =  new Cogtevran("chgouChang",87, 34, 98, 23, 75);
+         Cogtevran padmaPatil =  new Cogtevran("padmaPatil",12, 65, 67, 34, 76);
+         Cogtevran MarcusBelby = new Cogtevran("MarcusBelby",65, 76, 76, 56, 32);
+
 
 
     }
-    public static void print(Griffindor[] griffindor,int i) {
-        //griffindor = griffindor[i];
-        System.out.println(griffindor);
-    }
+
 
 }

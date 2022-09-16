@@ -9,37 +9,20 @@ public class Slizerin extends Horward{
         this.resolute = resolute;
         this.ambitious = ambitious;
     }
-    private void maximum() {
-        int summ = 0,summ1 = 0, max = 0;
-        for (int i = 0; i < slizerin.lenght; i++) {
-            Slizerin person = slizerin[i];
-            summ1 = person.getTrick() + person.getResolute() + person.getAmbitious();
-            System.out.println("У " + person.getName() +
-                    person.getTrick() + person.getResolute() + person.getAmbitious());
-            System.out.println("У " + person.getName() + "Сумма баллов = " + summ1);
-            if (summ < summ1) {
-                summ =summ1;
-                max = i;
-            }
-            Slizerin person = slizerin[max];
-            System.out.println(person.getName() + "   лучший Слизерин");
-
+    private void who(Slizerin slizerin) {
+        int summ = summ();
+        int summ1 = slizerin.summ();
+        if (summ < summ1) {
+            System.out.println("слизеринец " + getName() + " лучше чем " + slizerin.getName()
+                    + "  у него " + summ + " больше чем " + summ1);
+        } else {
+            System.out.println("слизеринец " + slizerin.getName() + " лучше чем " + getName()
+                    + "  у него " + summ1 + " больше чем " + summ);
         }
     }
-    private void who(int i,int g) {
-        String name = "";
-        int summ1 = 0;
-        Puffendui person = puffendui[i];
-        name = person.getName();
-        summ1 = person.getTrick() + person.getResolute() + person.getAmbitious();
-        Puffendui person = puffendui[g];
-        if (summ1 >person.getTrick() + person.getResolute() + person.getAmbitious()) {
-            System.out.println(name + "  лучше чем  " + person.getName());
-        } else {
-            System.out.println(person.getName() + "  лучше чем  " + name);
 
-
-        }
+    private  int summ(){
+        return  trick + resolute + ambitious;
     }
 
     public int getTrick() {
