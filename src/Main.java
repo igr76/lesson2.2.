@@ -23,10 +23,11 @@ public class Main {
         Cogtevran cogtevran ;
          Cogtevran chgouChang =  new Cogtevran("chgouChang",87, 34, 98, 23, 75);
          Cogtevran padmaPatil =  new Cogtevran("padmaPatil",12, 65, 67, 34, 76);
-         Cogtevran MarcusBelby = new Cogtevran("MarcusBelby",65, 76, 76, 56, 32);
+         Cogtevran marcusBelby = new Cogtevran("MarcusBelby",65, 76, 76, 56, 32);
 
 
-
+        gariPotter.who(ronUizli);
+        zahariyaSmit.compareHorward(dracoMalfoi);
     }
 
 

@@ -17,9 +17,12 @@ public class Puffendui extends Horward{
         if (summ < summ1) {
             System.out.println("слизеринец " + getName() + " лучше чем " + puffendui.getName()
                     + "  у него " + summ + " больше чем " + summ1);
-        } else {
+        } else if (summ > summ1) {
             System.out.println("слизеринец " + puffendui.getName() + " лучше чем " + getName()
                     + "  у него " + summ1 + " больше чем " + summ);
+        } else {
+            System.out.println("слизеринец " + puffendui.getName() + " равен " + getName()
+                    + "  у него " + summ1 + " равен " + summ);
         }
     }
     private  int summ(){
@@ -38,14 +41,9 @@ public class Puffendui extends Horward{
             return honesty;
         }
 
-        @Override
-        public String toString() {
-            return "Puffendui{" +
-                    "industriousness=" + industriousness +
-                    ", loyalty=" + loyalty +
-                    ", honesty=" + honesty +
-                    ", power=" + power +
-                    ", distance=" + distance +
-                    '}';
-        }
+    @Override
+    public String toString() {
+        return String.format(super.toString() +"nobility" + industriousness + "honor" +
+               loyalty +"bravery" +honesty);
     }
+}

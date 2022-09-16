@@ -13,11 +13,14 @@ public class Cogtevran extends Horward{
         int summ = summ();
         int summ1 = cogtevran.summ();
         if (summ < summ1) {
-            System.out.println("слизеринец " + getName() + " лучше чем " + cogtevran.getName()
+            System.out.println("Когтевранец " + getName() + " лучше чем " + cogtevran.getName()
                     + "  у него " + summ + " больше чем " + summ1);
-        } else {
-            System.out.println("слизеринец " + cogtevran.getName() + " лучше чем " + getName()
+        } else if (summ > summ1) {
+            System.out.println("Когтевранец " + cogtevran.getName() + " лучше чем " + getName()
                     + "  у него " + summ1 + " больше чем " + summ);
+        } else {
+            System.out.println("Когтевранец " + cogtevran.getName() + " равен " + getName()
+                    + "  у него " + summ1 + " равно " + summ);
         }
     }
     private  int summ(){
@@ -40,12 +43,7 @@ public class Cogtevran extends Horward{
 
     @Override
     public String toString() {
-        return "Cogtevran{" +
-                "mind=" + mind +
-                ", wit=" + wit +
-                ", creativity=" + creativity +
-                ", power=" + power +
-                ", distance=" + distance +
-                '}';
+        return  String.format(super.toString() +"nobility" + mind + "honor" +
+                wit +"bravery" +creativity);
     }
 }

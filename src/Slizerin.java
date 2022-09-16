@@ -15,10 +15,14 @@ public class Slizerin extends Horward{
         if (summ < summ1) {
             System.out.println("слизеринец " + getName() + " лучше чем " + slizerin.getName()
                     + "  у него " + summ + " больше чем " + summ1);
-        } else {
+        } else if (summ < summ1) {
             System.out.println("слизеринец " + slizerin.getName() + " лучше чем " + getName()
                     + "  у него " + summ1 + " больше чем " + summ);
+        } else {
+            System.out.println("слизеринец " + slizerin.getName() + " равен " + getName()
+                    + "  у него " + summ1 + " равно " + summ);
         }
+
     }
 
     private  int summ(){
@@ -39,12 +43,7 @@ public class Slizerin extends Horward{
 
     @Override
     public String toString() {
-        return "Slizerin{" +
-                "trick=" + trick +
-                ", resolute=" + resolute +
-                ", ambitious=" + ambitious +
-                ", power=" + power +
-                ", distance=" + distance +
-                '}';
+        return String.format(super.toString() +"nobility" + trick + "honor" +
+                resolute +"bravery" +ambitious);
     }
 }

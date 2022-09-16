@@ -1,7 +1,7 @@
 public class Horward {
    private String name;
-   int power;
-   int distance;
+   private int power;
+   private int distance;
 
     public Horward(String name,int power, int distance) {
         this.name = name;
@@ -17,9 +17,14 @@ public class Horward {
         int  ability2 = horward.ability();
         if (ability1 > ability2) {
             System.out.println("студент " + getName() + " лучше чем " + horward.getName()
-            + ability1 + " > " +  ability2);
-        } else { System.out.println("студент " + horward.getName() + " лучше чем " + getName()
-                + ability2 + " > " +  ability1);}
+            + "   " + ability1 + " > " +  ability2);
+        } else if (ability1 < ability2) {
+            System.out.println("студент " + horward.getName() + " лучше чем " + getName()
+                    + "   " + ability2 + " > " + ability1);
+        } else {
+            System.out.println("студент " + horward.getName() + " равен " + getName()
+                    + "   " +ability2 + " = " + ability1);
+        }
     }
 
     public String getName() {
@@ -36,11 +41,8 @@ public class Horward {
 
     @Override
     public String toString() {
-        return "Horward{" +
-                "name='" + name + '\'' +
-                ", power=" + power +
-                ", distance=" + distance +
-                '}';
+        return  String.format("Student " + name +"  его характеристики :   power"
+                + power + "distance" + distance );
     }
 }
 
